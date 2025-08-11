@@ -1,11 +1,4 @@
-import React from 'react';
-
-const Products = () => {
-    return (
-        <div>
-            <h1>Products Page</h1>
-       
-        </div>
-    );
+import React from 'react'
+export default function Products() {
+  return <h1>Products Page</h1>
 }
-export default Products;
