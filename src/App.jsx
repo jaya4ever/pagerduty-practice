@@ -24,6 +24,7 @@ import IncidentTypes from './pages/incidents/IncidentTypes.jsx'
 import ConferenceBridges from './pages/incidents/ConferenceBridges.jsx'
 import StatusTemplates from './pages/incidents/StatusTemplates.jsx'
 import IncidentRoles from './pages/incidents/IncidentRoles.jsx'
+<<<<<<< HEAD
 import JeliReviews from './pages/JeliReviews.jsx'
 import ServiceDirectory from './pages/services/ServiceDirectory.jsx'
 import BusinessServices from './pages/services/BusinessServices.jsx'
@@ -60,10 +61,13 @@ import UserOnboarding from './pages/analytics/UserOnboarding.jsx'
 import ServiceRecommendations from './pages/analytics/ServiceRecommendations.jsx'
 import InternalStatus from './pages/status/InternalStatus.jsx'
 import ExternalStatus from './pages/status/ExternalStatus.jsx'
+=======
+>>>>>>> 6ed5483ab154d09ef2aa0d58b1c8035ae4594f0e
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RouteLayout />}>
+<<<<<<< HEAD
       <Route index element={<Navigate to="/incidents" replace />} />
       
       <Route path="services">
@@ -135,12 +139,34 @@ const router = createBrowserRouter(
         <Route path="alerts" element={<Alerts />} />
         <Route path="visibility-console" element={<VisibilityConsole />} />
         <Route path="postmortems" element={<Postmortems />} />
+=======
+  
+   <Route path="services" element={<Services />} />
+      <Route path="people" element={<People />} />
+      <Route path="automation" element={<Automation />} />
+      <Route path="aiops" element={<AIOps />} />
+      <Route path="analytics" element={<Analytics />} />
+      <Route path="integrations" element={<Integrations />} />
+      <Route path="status" element={<Status />} />
+
+      <Route path="incidents">
+        <Route index element={<Incidents />} />
+        <Route path="all" element={<AllIncidents />} />
+        <Route path="alerts" element={<Alerts />} />
+        <Route path="visibility-console" element={<VisibilityConsole />} />
+          <Route path="postmortems" element={<Postmortems />} />
+>>>>>>> 6ed5483ab154d09ef2aa0d58b1c8035ae4594f0e
         <Route path="incident-types" element={<IncidentTypes />} />
         <Route path="conference-bridges" element={<ConferenceBridges />} />
         <Route path="status-templates" element={<StatusTemplates />} />
         <Route path="incident-roles" element={<IncidentRoles />} />
+<<<<<<< HEAD
         <Route path="jeli-reviews" element={<JeliReviews />} />
       </Route>
+=======
+      </Route>
+
+>>>>>>> 6ed5483ab154d09ef2aa0d58b1c8035ae4594f0e
     </Route>
   )
 )

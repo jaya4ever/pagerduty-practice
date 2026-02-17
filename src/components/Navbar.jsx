@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useRef, useEffect } from 'react'
 import { 
   Flex, 
@@ -349,10 +350,29 @@ export default function Navbar() {
             }
 
             return (
+=======
+import React from 'react'
+import { Flex, Box, HStack, Link as ChakraLink } from '@chakra-ui/react'
+import { Link as RouterLink } from 'react-router-dom'
+import { routes } from '../layout/route.js'
+
+export default function Navbar() {
+ 
+  
+
+  return (
+    <Box as="nav" bg="green.600" px={8} py={4} boxShadow="md">
+      <Flex align="center" justify="space-between">
+        <HStack spacing={6}>
+          {routes.map(
+            (route) =>
+              route.path &&
+>>>>>>> 6ed5483ab154d09ef2aa0d58b1c8035ae4594f0e
               <ChakraLink
                 key={route.path}
                 as={RouterLink}
                 to={route.path}
+<<<<<<< HEAD
                 fontWeight="medium"
                 color={isActive ? "green.500" : "gray.700"}
                 borderBottom={isActive ? "2px solid" : "none"}
@@ -376,6 +396,15 @@ export default function Navbar() {
           >
             ⭐ AI
           </ChakraLink>
+=======
+                color="white"
+                fontWeight="semibold"
+                _hover={{ color: "green.200" }}
+              >
+                {route.label}
+              </ChakraLink>
+          )}
+>>>>>>> 6ed5483ab154d09ef2aa0d58b1c8035ae4594f0e
         </HStack>
 
         <Box position="relative" maxW="300px" ml={8}>

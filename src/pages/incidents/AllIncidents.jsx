@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useRef, useEffect } from 'react'
 import { 
   Box, 
@@ -317,6 +318,20 @@ export default function AllIncidents() {
           </VStack>
         </Box>
       </Box>
+=======
+import React from 'react'
+import { Box, Heading, Text } from '@chakra-ui/react'
+
+export default function AllIncidents() {
+  return (
+    <Box p={8}>
+      <Heading as="h1" size="xl" mb={4} color="orange.600">
+        All Incidents
+      </Heading>
+      <Text fontSize="lg">
+        This is a simple All Incidents page.
+      </Text>
+>>>>>>> 6ed5483ab154d09ef2aa0d58b1c8035ae4594f0e
     </Box>
   )
 }
