@@ -1,12 +1,13 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
+import { Box } from '@chakra-ui/react'
 import Navbar from '../components/Navbar.jsx'
 
 export default function RouteLayout() {
   return (
-    <div>
+    <Box minH="100vh" bg="white">
       <Navbar />
       <Outlet />
-    </div>
+    </Box>
   )
 }
